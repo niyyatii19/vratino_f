@@ -1,0 +1,26 @@
+.landing-screen {
+  background-color: lightgreen;
+  width: 100%;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+  .left {
+  }
+  .right {
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

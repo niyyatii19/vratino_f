@@ -1,0 +1,21 @@
+.gallery {
+  background-color: purple;
+  width: 100%;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+  a {
+    position: relative;
+    bottom: -450px;
+    left: 50%;
+    img {
+      width: 30px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
