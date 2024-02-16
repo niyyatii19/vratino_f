@@ -1,0 +1,35 @@
+<!-- <div class="slideshow image-container">
+    <div>
+        <div>
+        <img src="/assets/images/moon.jpg"  suppress-size>
+        <div class="overlay-text">
+            <h1>{{title}}</h1>
+            <p>A SPACE RESEARCH COMPANY</p>
+          </div>
+    </div>
+    </div>
+</div> -->
+
+
+<div class="slides">
+    <div class="slide"
+        [ngStyle]="{'background-image': 'url('+slides[currentSlide].url+ ')', opcaity: hidden?0:1, 
+        'tansition':'opcaity '+ animationSpeed + 'ms ease-in-out'}">
+         <div class="overlay-text">
+            <h1>{{title}}</h1>
+            <p>A SPACE RESEARCH COMPANY</p>
+          </div>
+    </div>
+    @if(indicatorsVisible){
+    <div id="indicators">
+        @for (slide of slides; track $index) {
+        <div class="indicator " (click)="jumpToSlide($index)" [ngClass]="{active :$index==currentSlide}">
+        </div>
+        }
+    </div>
+    }
+    <button (click)="next()" class="nextButton"><fa-icon [icon]="faArrowRight"></fa-icon></button>
+    <button (click)="prev()" class="prevButton"><fa-icon [icon]="faArrowLeft"></fa-icon></button>
+
+
+</div>
