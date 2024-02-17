@@ -6,7 +6,13 @@
       opacity: hidden ? 0 : 1,
       transition: 'opacity ' + animationSpeed + 'ms ease-in-out'
     }"
-  ></div>
+  >
+  <div class="overlay-text">
+    <h1>{{title}}</h1>
+    <p>A Space Research Company</p>
+    <div class="overlay"></div>
+  </div>
+</div>
 
   @if (indicatorsVisible) {
   <div id="indicators">

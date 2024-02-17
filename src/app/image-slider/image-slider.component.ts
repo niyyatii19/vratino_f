@@ -11,6 +11,7 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './image-slider.component.scss',
 })
 export class ImageSliderComponent implements OnInit {
+  @Input() title: string = "Vratino Technologies"
   @Input() slides: any[] = [];
   @Input() indicatorsVisible = true;
   @Input() animationSpeed = 500;

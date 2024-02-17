@@ -15,29 +15,19 @@ export class AppComponent {
 
   slides: any[] = [
     {
-      url: '/assets/images/image1.avif',
+      url: '/assets/images/image3.jpg',
       title: 'First slide',
       description: 'This is the first slide',
     },
     {
-      url: '/assets/images/image2.avif',
+      url: '/assets/images/image5.jpg',
       title: 'Second slide',
       description: 'This is the second slide',
     },
     {
-      url: '/assets/images/image3.avif',
+      url: '/assets/images/image4.jpg',
       title: 'Third slide',
       description: 'This is the third slide',
-    },
-    {
-      url: '/assets/images/image4.avif',
-      title: 'Fourth slide',
-      description: 'This is the fourth slide',
-    },
-    {
-      url: '/assets/images/image5.avif',
-      title: 'Fifth slide',
-      description: 'This is the fifth slide',
-    },
+    }
   ];
 }
