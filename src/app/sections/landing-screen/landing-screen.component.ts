@@ -17,7 +17,7 @@ export class LandingScreenComponent {
       description: 'This is the first slide',
     },
     {
-      url: '/assets/images/image5.jpg',
+      url: '/assets/images/image6.webp',
       title: 'Second slide',
       description: 'This is the second slide',
     },
