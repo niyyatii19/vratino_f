@@ -1,17 +1,11 @@
-<div
-  style="
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  "
->
 
-  <app-image-slider
-    [indicatorsVisible]="true"
-    [animationSpeed]="200"
-    [slides]="slides"
-    [autoPlay]="false"
-    [autoPlaySpeed]="2000"
-  ></app-image-slider>
+<div class="app">
+  <app-topbar></app-topbar>
+  <div class="sections">
+    <app-landing-screen></app-landing-screen>
+    <app-about></app-about>
+    <app-advisory-commitee></app-advisory-commitee>
+    <app-gallery></app-gallery>
+    <app-products-services></app-products-services>
+  </div>
 </div>
